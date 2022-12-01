@@ -1,5 +1,4 @@
-# LSAT
-##Local self-attention in Transformer for visual question answering
+# Local self-attention in Transformer for visual question answering
 ### Training
 **Train model on VQA-v2 with default hyperparameters:**
 ```bash
