@@ -1,8 +1,9 @@
 # Local self-attention in Transformer for visual question answering
+LSAT is based on the TRAR_Base[https://github.com/rentainhe/TRAR-VQA] model when using 8*8 grid image features.
 ### Training
 **Train model on VQA-v2 with default hyperparameters:**
 ```bash
-python3 run.py --RUN='train' --DATASET='vqa' --MODEL='trar'
+ python3 run.py --RUN='train' --MODEL='mcan_small' --DATASET='vqa'
 ```
 and the training log will be seved to:
 ```
@@ -43,8 +44,13 @@ Result file are saved at:
 
 You can upload the obtained result json file to [Eval AI](https://evalai.cloudcv.org/web/challenges) to evaluate the scores.
 
-### Models
-Here we provide our pretrained model and log, please see [MODEL.md](MODEL.md)
+
+@misc{yu2019openvqa,
+  author = {Yu, Zhou and Cui, Yuhao and Shao, Zhenwei and Gao, Pengbing and Yu, Jun},
+  title = {OpenVQA},
+  howpublished = {\url{https://github.com/MILVLG/openvqa}},
+  year = {2019}
+}
 
 ## Acknowledgements
 - [openvqa](https://github.com/MILVLG/openvqa)
