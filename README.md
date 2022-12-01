@@ -50,4 +50,5 @@ Here we provide our pretrained model and log, please see [MODEL.md](MODEL.md)
 ## Acknowledgements
 - [openvqa](https://github.com/MILVLG/openvqa)
 - [grid-feats-vqa](https://github.com/facebookresearch/grid-feats-vqa)
+- [TRAR](https://github.com/rentainhe/TRAR-VQA)
 
