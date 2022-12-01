@@ -45,12 +45,6 @@ Result file are saved at:
 You can upload the obtained result json file to [Eval AI](https://evalai.cloudcv.org/web/challenges) to evaluate the scores.
 
 
-@misc{yu2019openvqa,
-  author = {Yu, Zhou and Cui, Yuhao and Shao, Zhenwei and Gao, Pengbing and Yu, Jun},
-  title = {OpenVQA},
-  howpublished = {\url{https://github.com/MILVLG/openvqa}},
-  year = {2019}
-}
 
 ## Acknowledgements
 - [openvqa](https://github.com/MILVLG/openvqa)
