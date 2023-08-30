@@ -20,7 +20,7 @@ Args:
 
 Resume training from specific saved model weights
 ```bash
-python3 run.py --RUN='train' --DATASET='vqa' --MODEL='trar' --RESUME=True --CKPT_V=str --CKPT_E=int
+python3 run.py --RUN='train' --DATASET='vqa' --MODEL='lsat' --RESUME=True --CKPT_V=str --CKPT_E=int
 ```
 - `--CKPT_V=str`: the specific checkpoint version
 - `--CKPT_E=int`: the resumed epoch number
@@ -29,13 +29,13 @@ python3 run.py --RUN='train' --DATASET='vqa' --MODEL='trar' --RESUME=True --CKPT
 1. Multi-GPU Training:
 Add `--GPU='0, 1, 2, 3...'` after the training scripts.
 ```bash
-python3 run.py --RUN='train' --DATASET='vqa' --MODEL='trar' --GPU='0,1,2,3'
+python3 run.py --RUN='train' --DATASET='vqa' --MODEL='lsat' --GPU='0,1,2,3'
 ```
 The batch size on each GPU will be divided into `BATCH_SIZE/GPUs` automatically.
 **Online Testing**
 All the evaluations on the `test` dataset of VQA-v2 and CLEVR benchmarks can be achieved as follows:
 ```bash
-python3 run.py --RUN='test' --MODEL='trar' --DATASET='{vqa, clevr}' --CKPT_V=str --CKPT_E=int
+python3 run.py --RUN='test' --MODEL='lsat' --DATASET='{vqa, clevr}' --CKPT_V=str --CKPT_E=int
 ```
 
 Result file are saved at:
@@ -51,3 +51,16 @@ You can upload the obtained result json file to [Eval AI](https://evalai.cloudcv
 - [grid-feats-vqa](https://github.com/facebookresearch/grid-feats-vqa)
 - [TRAR](https://github.com/rentainhe/TRAR-VQA)
 
+
+## Citation
+if LSAT is helpful for your research or you wish to refer the baseline results published here, we'd really appreciate it if you could cite this paper:
+```
+@article{shen2022local,
+  title={Local self-attention in transformer for visual question answering},
+  author={Shen, Xiang and Han, Dezhi and Guo, Zihan and Chen, Chongqing and Hua, Jie and Luo, Gaofeng},
+  journal={Applied Intelligence},
+  pages={1--18},
+  year={2022},
+  publisher={Springer}
+}
+```
