@@ -3,7 +3,7 @@ LSAT is based on the TRAR_Base[https://github.com/rentainhe/TRAR-VQA] model when
 ### Training
 **Train model on VQA-v2 with default hyperparameters:**
 ```bash
- python3 run.py --RUN='train' --MODEL='mcan_small' --DATASET='vqa'
+ python3 run.py --RUN='train' --MODEL='lsat' --DATASET='vqa'
 ```
 and the training log will be seved to:
 ```
